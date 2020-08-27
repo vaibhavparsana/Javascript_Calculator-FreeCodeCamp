@@ -1,0 +1,121 @@
+#buttons {
+  margin: auto;
+  display: grid;
+  grid-template-areas: "display display display display" "clear clear divide multiply" "seven eight nine subtract" "four five six add" "one two three equals" "zero zero decimal equals";
+  grid-gap: 1px;
+  padding: 5px;
+  width: 15%;
+  background-color: black;
+}
+
+#clear, #divide, #multiply, #seven, #eight, #nine, #subtract, #four, #five, #six, #add, #one, #two, #three, #equals, #zero, #decimal {
+  font-weight: bold;
+  font-family: Courier;
+  border: none;
+  font-size: 15px;
+  height: 41px;
+  color: white;
+}
+
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero {
+  background-color: rgb(122, 107, 107);
+}
+
+#clear:hover, #divide:hover, #multiply:hover, #seven:hover, #eight:hover, #nine:hover, #subtract:hover, #four:hover, #five:hover, #six:hover, #add:hover, #one:hover, #two:hover, #three:hover, #equals:hover, #zero:hover, #decimal:hover {
+  color: black;
+}
+
+#display {
+  /* margin-bottom: 5px; */
+  font-family: Courier;
+  grid-area: display;
+  font-size: 15px;
+  min-height: 39px;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: text-top;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 5px;
+  padding-bottom: 0px;
+  background-color: rgb(122, 107, 107);
+  color: white;
+  border: none
+}
+
+#clear {
+  grid-area: clear;
+  background-color: rgba(198, 77, 77, 0.88);
+}
+
+#equals {
+  height: 83px;
+  grid-area: equals;
+  background-color: rgba(98, 178, 57, 0.62);
+  ;
+}
+
+#decimal {
+  grid-area: decimal;
+  background-color: rgb(51, 45, 45);
+}
+
+#add {
+  grid-area: add;
+  background-color: rgb(51, 45, 45);
+}
+
+#subtract {
+  grid-area: subtract;
+  background-color: rgb(51, 45, 45);
+}
+
+#divide {
+  grid-area: divide;
+  background-color: rgb(51, 45, 45);
+}
+
+#multiply {
+  grid-area: multiply;
+  background-color: rgb(51, 45, 45);
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#zero {
+  grid-area: zero;
+}
